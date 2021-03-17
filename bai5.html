@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="checkMin()">
+
+</body>
+</html>
+<script>
+    function checkMin() {
+        let numbers=[]
+        for (i=0;i<3;i++){
+            numbers[i]=+prompt("Nhập số")
+        }
+        min=numbers[0]
+        for (i=0;i<numbers.length;i++){
+            if (numbers[i]<=min){
+                min=numbers[i];
+            }
+        }
+        return alert(min)
+    }
+</script>

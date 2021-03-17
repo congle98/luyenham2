@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="daoMang()">
+
+</body>
+</html>
+<script>
+    function daoMang() {
+        let snumbers=+prompt("Nhập số phần tử");
+        let numbers=[]
+        for (i=0;i<snumbers;i++){
+            numbers[i]=+prompt("Nhập số thứ "+i+": ")
+        }
+        numbers=numbers.reverse();
+        return alert(numbers);
+    }
+</script>
